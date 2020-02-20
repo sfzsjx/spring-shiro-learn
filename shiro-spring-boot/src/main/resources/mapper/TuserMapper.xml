@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gree.bdc.shiro.mapper.TuserMapper">
+  <resultMap id="BaseResultMap" type="com.gree.bdc.shiro.domain.Tuser">
+    <!--@mbg.generated generated on Thu Feb 20 17:14:43 CST 2020.-->
+    <!--@Table tuser-->
+    <id column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="mailNum" jdbcType="VARCHAR" property="mailnum" />
+    <result column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="sessionKey" jdbcType="VARCHAR" property="sessionkey" />
+    <result column="userName" jdbcType="VARCHAR" property="username" />
+    <result column="userDepart" jdbcType="VARCHAR" property="userdepart" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="createTime" jdbcType="VARCHAR" property="createtime" />
+    <result column="createByWho" jdbcType="VARCHAR" property="createbywho" />
+    <result column="updateTime" jdbcType="VARCHAR" property="updatetime" />
+    <result column="updateByWho" jdbcType="VARCHAR" property="updatebywho" />
+    <result column="isAvalible" jdbcType="INTEGER" property="isavalible" />
+    <result column="departmentId" jdbcType="INTEGER" property="departmentid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Feb 20 17:14:43 CST 2020.-->
+    userId, mailNum, openid, sessionKey, userName, userDepart, `password`, createTime, 
+    createByWho, updateTime, updateByWho, isAvalible, departmentId
+  </sql>
+</mapper>
